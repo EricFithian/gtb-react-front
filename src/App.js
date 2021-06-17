@@ -18,14 +18,14 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
         <Route path="/projects">
-          <Projects />
+          <Projects URL={URL}/>
         </Route>
         <Route path="/about">
           <About URL={URL} />
+        </Route>
+        <Route exact path="/">
+          <Home />
         </Route>
       </Switch>
       <Footer />
